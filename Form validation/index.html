@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<!--The lang attribute specifies the language of the content as English. --> <html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<!-- Sets the viewport properties to adjust the page's dimensions to the  device's width and sets the initial scale to 1.0 (no zoom).--> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--This line links an external CSS file named "style.css" to the HTML  document.--> 
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet"  
+href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> <script  
+src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+<!--This sets the title of the web page, which appears in the browser's  title bar or tab.--> 
+<title>Form Validation </title> 
+</head> 
+<body> 
+<!--The <body> element contains the visible content of the web page.--> <div class="container"> 
+<div class="header"> 
+<!--div class="header" holds all the header elements.--> 
+<h2>Registration Form</h2> 
+</div> 
+<form action="" class="form"> 
+<div class="form-group"> 
+<label for="">UserName : </label> 
+<input type="text" placeholder=" " id="username"  
+autocomplete="off"> 
+<i class="ion-ios-checkmark"></i> 
+<i class="ion-android-alert"></i> 
+<span></span> 
+</div>
+<div class="form-group"> 
+<label for="">Email : </label> 
+<input type="text" placeholder=" " id="email"  
+autocomplete="off"> 
+<i class="ion-ios-checkmark"></i> 
+<i class="ion-android-alert"></i> 
+<span></span> 
+</div> 
+<div class="form-group"> 
+<label for="">Phone Number : </label> 
+<input type="text" placeholder=" " id="phonenumber"  
+autocomplete="off"> 
+<i class="ion-ios-checkmark"></i> 
+<i class="ion-android-alert"></i> 
+<span></span> 
+</div> 
+<div class="form-group"> 
+<label for=""> Password : </label> 
+<input type="password" placeholder="Enter password"  
+id="password"> 
+<img  
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/OOjs_UI_icon_ey eClosed.svg/1200px-OOjs_UI_icon_eyeClosed.svg.png" class="eyeicon"  id="eyeicon"> 
+<span> 
+</span> 
+</div> 
+<div class="form-group 1"> 
+<label for="">Confirm Password : </label> 
+<input type="password" placeholder=" " id="confirmpassword"  autocomplete="off"> 
+<i class="ion-ios-checkmark"></i> 
+<i class="ion-android-alert"></i> 
+<span></span> 
+</div> 
+<div class="form-group "> 
+<label for=" ">Birth Date (optional) :</label> 
+<input type="date" id="date" placeholder="Select your date"> <span></span> 
+</div> 
+<div class="form-group "> 
+<label for=" ">Gender (optional) :</label> 
+<select id="gender"> 
+<option value="" selected disabled>Select your  
+gender</option> 
+<option value="Male">Male</option> 
+<option value="Female">Female</option> 
+<option value="Other">Other</option> 
+</select> 
+<span></span> 
+<!--The <span> elements are used to display validation  
+messages--> 
+</div>
+<div> 
+<button type="button" onclick="reset()">Reset </button> 
+<button type="submit"> Submit</button> 
+<!--A "Submit" button for users to submit the form data.--> </div> 
+</form> 
+</div> 
+<!--This line links an external JavaScript file named "script.js" to the  HTML document. --> 
+<script src="script.js"></script> 
+</body> 
+</html> 
